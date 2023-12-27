@@ -1,0 +1,1145 @@
+2023-12-24 10:44:42.749  INFO 64952 --- [restartedMain] c.i.b.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 64952 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-24 10:44:42.752  INFO 64952 --- [restartedMain] c.i.b.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-24 10:44:42.769  INFO 64952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 10:44:42.770  INFO 64952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 10:44:43.057  INFO 64952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 10:44:43.086  INFO 64952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 10 JPA repository interfaces.
+2023-12-24 10:44:43.231  INFO 64952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@43ef4570' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 10:44:43.233  INFO 64952 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 10:44:43.350  INFO 64952 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-24 10:44:43.355  INFO 64952 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-24 10:44:43.355  INFO 64952 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-24 10:44:43.384  INFO 64952 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-24 10:44:43.384  INFO 64952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 614 ms
+2023-12-24 10:44:43.595  INFO 64952 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-24 10:44:43.708  INFO 64952 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-24 10:44:44.283  INFO 64952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:44:44.302  WARN 64952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 10:44:44.559  INFO 64952 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5dde5497-3c74-48b2-b4e4-c78dfeca43bd
+
+2023-12-24 10:44:44.681  INFO 64952 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d987858, org.springframework.security.web.context.SecurityContextPersistenceFilter@1df69efa, org.springframework.security.web.header.HeaderWriterFilter@35066057, org.springframework.web.filter.CorsFilter@29cbd895, org.springframework.security.web.authentication.logout.LogoutFilter@ac885d8, config.rs.nikolapacekvetnic.schoolapp_backend.JWTAuthorizationFilter@38d222ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@48e20889, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28578cae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@302ea4a5, org.springframework.security.web.session.SessionManagementFilter@db4a8f1, org.springframework.security.web.access.ExceptionTranslationFilter@2345af73, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66598e45]
+2023-12-24 10:44:44.767  INFO 64952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-24 10:44:44.786  INFO 64952 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-24 10:44:44.792  INFO 64952 --- [restartedMain] c.i.b.BackendFinalApplication            : Started BackendFinalApplication in 2.223 seconds (JVM running for 2.575)
+2023-12-24 10:44:52.396  INFO 64952 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 10:44:52.396  INFO 64952 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-24 10:44:52.398  INFO 64952 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-12-24 10:44:52.612  INFO 64952 --- [http-nio-8080-exec-1] c.i.b.c.UserLoginController              : 1 [ADMIN] admin : JWTToken granted.
+2023-12-24 10:44:52.612  INFO 64952 --- [http-nio-8080-exec-1] c.i.b.c.UserLoginController              : admin : logged in.
+2023-12-24 10:48:56.134  INFO 64952 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:48:56.138  INFO 64952 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-24 10:48:56.140  INFO 64952 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-24 10:49:35.613  INFO 65134 --- [restartedMain] c.i.b.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 65134 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-24 10:49:35.616  INFO 65134 --- [restartedMain] c.i.b.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-24 10:49:35.632  INFO 65134 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 10:49:35.633  INFO 65134 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 10:49:35.923  INFO 65134 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 10:49:35.953  INFO 65134 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 10 JPA repository interfaces.
+2023-12-24 10:49:36.095  INFO 65134 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@201da76e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 10:49:36.097  INFO 65134 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 10:49:36.218  INFO 65134 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-24 10:49:36.222  INFO 65134 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-24 10:49:36.223  INFO 65134 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-24 10:49:36.249  INFO 65134 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-24 10:49:36.250  INFO 65134 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 617 ms
+2023-12-24 10:49:36.449  INFO 65134 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-24 10:49:36.568  INFO 65134 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-24 10:49:37.067  INFO 65134 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:49:37.088  WARN 65134 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 10:49:37.331  INFO 65134 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c8d35805-4fb2-4209-ae5a-3872536d4b46
+
+2023-12-24 10:49:37.448  INFO 65134 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ff57d0a, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b6b80f0, org.springframework.security.web.header.HeaderWriterFilter@4b66b108, org.springframework.web.filter.CorsFilter@49c8ad73, org.springframework.security.web.authentication.logout.LogoutFilter@497190e1, config.rs.nikolapacekvetnic.schoolapp_backend.JWTAuthorizationFilter@2075ecfc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b924c95, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37eca00d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14e43f5f, org.springframework.security.web.session.SessionManagementFilter@6164faac, org.springframework.security.web.access.ExceptionTranslationFilter@2b848ff6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68eb6020]
+2023-12-24 10:49:37.536  INFO 65134 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-24 10:49:37.556  INFO 65134 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-24 10:49:37.562  INFO 65134 --- [restartedMain] c.i.b.BackendFinalApplication            : Started BackendFinalApplication in 2.12 seconds (JVM running for 2.558)
+2023-12-24 10:50:33.965  INFO 65134 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 10:50:33.966  INFO 65134 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-24 10:50:33.967  INFO 65134 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-12-24 10:50:34.187  INFO 65134 --- [http-nio-8080-exec-2] c.i.b.c.UserLoginController              : 1 [ADMIN] admin : JWTToken granted.
+2023-12-24 10:50:34.188  INFO 65134 --- [http-nio-8080-exec-2] c.i.b.c.UserLoginController              : admin : logged in.
+2023-12-24 10:50:51.887 ERROR 65134 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: A different object with the same identifier value was already associated with the session : [entities.rs.nikolapacekvetnic.schoolapp_backend.TeacherEntity#1]; nested exception is javax.persistence.EntityExistsException: A different object with the same identifier value was already associated with the session : [entities.rs.nikolapacekvetnic.schoolapp_backend.TeacherEntity#1]] with root cause
+
+javax.persistence.EntityExistsException: A different object with the same identifier value was already associated with the session : [entities.rs.nikolapacekvetnic.schoolapp_backend.TeacherEntity#1]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:123) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:726) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:706) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362) ~[spring-orm-5.3.8.jar:5.3.8]
+	at jdk.proxy3.$Proxy124.persist(Unknown Source) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-5.3.8.jar:5.3.8]
+	at jdk.proxy3.$Proxy124.persist(Unknown Source) ~[?:?]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:597) ~[spring-data-jpa-2.5.2.jar:2.5.2]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.5.2.jar:2.5.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.5.2.jar:2.5.2]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.5.2.jar:2.5.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.5.2.jar:2.5.2]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.5.2.jar:2.5.2]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599) ~[spring-data-commons-2.5.2.jar:2.5.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.8.jar:5.3.8]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.5.2.jar:2.5.2]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.5.2.jar:2.5.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.8.jar:5.3.8]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.8.jar:5.3.8]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.8.jar:5.3.8]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.8.jar:5.3.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.8.jar:5.3.8]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.8.jar:5.3.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.8.jar:5.3.8]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.5.2.jar:2.5.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.8.jar:5.3.8]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.8.jar:5.3.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.8.jar:5.3.8]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.8.jar:5.3.8]
+	at jdk.proxy3.$Proxy131.save(Unknown Source) ~[?:?]
+	at controllers.rs.nikolapacekvetnic.schoolapp_backend.UserRegistrationController.addNewTeacher(UserRegistrationController.java:101) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.48.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.8.jar:5.3.8]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.48.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at config.rs.nikolapacekvetnic.schoolapp_backend.JWTAuthorizationFilter.doFilterInternal(JWTAuthorizationFilter.java:70) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.5.1.jar:5.5.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.8.jar:5.3.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.48.jar:9.0.48]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+
+2023-12-24 10:51:05.013  INFO 65134 --- [http-nio-8080-exec-4] c.i.b.c.UserRegistrationController       : 2 [TEACHER] petar.petrovic : created.
+2023-12-24 10:51:37.059  INFO 65134 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:51:37.063  INFO 65134 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-24 10:51:37.064  INFO 65134 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-24 10:55:04.009  INFO 65374 --- [restartedMain] c.i.b.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 65374 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-24 10:55:04.013  INFO 65374 --- [restartedMain] c.i.b.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-24 10:55:04.029  INFO 65374 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 10:55:04.029  INFO 65374 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 10:55:04.314  INFO 65374 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 10:55:04.350  INFO 65374 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 10 JPA repository interfaces.
+2023-12-24 10:55:04.517  INFO 65374 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1634014a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 10:55:04.519  INFO 65374 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 10:55:04.623  INFO 65374 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-24 10:55:04.627  INFO 65374 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-24 10:55:04.627  INFO 65374 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-24 10:55:04.665  INFO 65374 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-24 10:55:04.665  INFO 65374 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 635 ms
+2023-12-24 10:55:04.857  INFO 65374 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-24 10:55:04.977  INFO 65374 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-24 10:55:05.455  INFO 65374 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 10:55:05.474  WARN 65374 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 10:55:05.687  INFO 65374 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: dc481ac6-942d-4974-8ffd-5459d1303181
+
+2023-12-24 10:55:05.796  INFO 65374 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16fcdddb, org.springframework.security.web.context.SecurityContextPersistenceFilter@73956fc5, org.springframework.security.web.header.HeaderWriterFilter@2d3f84c0, org.springframework.web.filter.CorsFilter@5c2f6f75, org.springframework.security.web.authentication.logout.LogoutFilter@749c211f, config.rs.nikolapacekvetnic.schoolapp_backend.JWTAuthorizationFilter@559502eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11753d34, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c243a28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@415052dc, org.springframework.security.web.session.SessionManagementFilter@5c86cb77, org.springframework.security.web.access.ExceptionTranslationFilter@4cd7798, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@df70185]
+2023-12-24 10:55:05.878  INFO 65374 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-24 10:55:05.895  INFO 65374 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-24 10:55:05.901  INFO 65374 --- [restartedMain] c.i.b.BackendFinalApplication            : Started BackendFinalApplication in 2.056 seconds (JVM running for 2.635)
+2023-12-24 10:56:20.397  INFO 65374 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 10:56:20.398  INFO 65374 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-24 10:56:20.401  INFO 65374 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2023-12-24 10:56:20.674  INFO 65374 --- [http-nio-8080-exec-1] c.i.b.c.UserLoginController              : 0 [ADMIN] admin : JWTToken granted.
+2023-12-24 10:56:20.675  INFO 65374 --- [http-nio-8080-exec-1] c.i.b.c.UserLoginController              : admin : logged in.
+2023-12-24 10:56:47.318  INFO 65374 --- [http-nio-8080-exec-3] c.i.b.c.UserRegistrationController       : 1 [TEACHER] petar.petrovic : created.
+2023-12-24 11:00:25.162  INFO 65374 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:00:25.166  INFO 65374 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-24 11:00:25.168  INFO 65374 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-24 11:01:36.004  INFO 65629 --- [restartedMain] c.i.b.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 65629 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-24 11:01:36.007  INFO 65629 --- [restartedMain] c.i.b.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-24 11:01:36.024  INFO 65629 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 11:01:36.024  INFO 65629 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 11:01:36.311  INFO 65629 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 11:01:36.342  INFO 65629 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 10 JPA repository interfaces.
+2023-12-24 11:01:36.496  INFO 65629 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@250583b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 11:01:36.498  INFO 65629 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 11:01:36.615  INFO 65629 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-24 11:01:36.620  INFO 65629 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-24 11:01:36.620  INFO 65629 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-24 11:01:36.648  INFO 65629 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-24 11:01:36.648  INFO 65629 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 624 ms
+2023-12-24 11:01:36.854  INFO 65629 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-24 11:01:36.959  INFO 65629 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-24 11:01:37.519  INFO 65629 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:01:37.543  WARN 65629 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 11:01:37.816  INFO 65629 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 621712ff-98d0-42c1-9de0-e4347dfcb88c
+
+2023-12-24 11:01:37.939  INFO 65629 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9d60645, org.springframework.security.web.context.SecurityContextPersistenceFilter@31015ded, org.springframework.security.web.header.HeaderWriterFilter@451095ed, org.springframework.web.filter.CorsFilter@7cd53ef3, org.springframework.security.web.authentication.logout.LogoutFilter@6904b8b, config.rs.nikolapacekvetnic.schoolapp_backend.JWTAuthorizationFilter@cba4d32, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f511b77, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@461e0fc3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ddc33fc, org.springframework.security.web.session.SessionManagementFilter@4eded2b8, org.springframework.security.web.access.ExceptionTranslationFilter@7e99931d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2aef8e6c]
+2023-12-24 11:01:38.028  INFO 65629 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-24 11:01:38.047  INFO 65629 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-24 11:01:38.054  INFO 65629 --- [restartedMain] c.i.b.BackendFinalApplication            : Started BackendFinalApplication in 2.234 seconds (JVM running for 2.592)
+2023-12-24 11:01:46.821  INFO 65629 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 11:01:46.821  INFO 65629 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-24 11:01:46.822  INFO 65629 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-12-24 11:01:47.060  INFO 65629 --- [http-nio-8080-exec-2] c.i.b.c.UserLoginController              : 0 [ADMIN] admin : JWTToken granted.
+2023-12-24 11:01:47.060  INFO 65629 --- [http-nio-8080-exec-2] c.i.b.c.UserLoginController              : admin : logged in.
+2023-12-24 11:02:03.826  INFO 65629 --- [http-nio-8080-exec-3] c.i.b.c.UserLoginController              : 1 [TEACHER] petar.petrovic : JWTToken granted.
+2023-12-24 11:02:03.829  INFO 65629 --- [http-nio-8080-exec-3] c.i.b.c.UserLoginController              : petar.petrovic : logged in.
+2023-12-24 11:02:08.650  INFO 65629 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:02:08.670  INFO 65629 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-24 11:02:08.673  INFO 65629 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-24 11:10:48.327  INFO 65978 --- [restartedMain] c.i.b.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 65978 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-24 11:10:48.331  INFO 65978 --- [restartedMain] c.i.b.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-24 11:10:48.345  INFO 65978 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 11:10:48.345  INFO 65978 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 11:10:48.632  INFO 65978 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 11:10:48.666  INFO 65978 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 10 JPA repository interfaces.
+2023-12-24 11:10:48.813  INFO 65978 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4cd363d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 11:10:48.815  INFO 65978 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 11:10:48.923  INFO 65978 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-24 11:10:48.927  INFO 65978 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-24 11:10:48.927  INFO 65978 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-24 11:10:48.950  INFO 65978 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-24 11:10:48.950  INFO 65978 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 604 ms
+2023-12-24 11:10:49.134  INFO 65978 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-24 11:10:49.261  INFO 65978 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-24 11:10:49.742  INFO 65978 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:10:49.763  WARN 65978 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 11:10:49.984  INFO 65978 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 01a3d82e-5d4b-41a9-85dd-081d288c85ba
+
+2023-12-24 11:10:50.097  INFO 65978 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7954c82a, org.springframework.security.web.context.SecurityContextPersistenceFilter@484d5099, org.springframework.security.web.header.HeaderWriterFilter@4ffffc3c, org.springframework.web.filter.CorsFilter@789469e2, org.springframework.security.web.authentication.logout.LogoutFilter@6c2a9eba, config.rs.nikolapacekvetnic.schoolapp_backend.JWTAuthorizationFilter@48a696ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cf03238, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@78b6f58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@204c8121, org.springframework.security.web.session.SessionManagementFilter@3b388bea, org.springframework.security.web.access.ExceptionTranslationFilter@4a3be745, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66566df9]
+2023-12-24 11:10:50.184  INFO 65978 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-24 11:10:50.202  INFO 65978 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-24 11:10:50.208  INFO 65978 --- [restartedMain] c.i.b.BackendFinalApplication            : Started BackendFinalApplication in 2.036 seconds (JVM running for 2.548)
+2023-12-24 11:10:56.806  INFO 65978 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 11:10:56.807  INFO 65978 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-24 11:10:56.808  INFO 65978 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-12-24 11:10:57.032  INFO 65978 --- [http-nio-8080-exec-1] c.i.b.s.UserLoginServiceImpl             : 1 [TEACHER] petar.petrovic : JWTToken granted.
+2023-12-24 11:10:57.033  INFO 65978 --- [http-nio-8080-exec-1] c.i.b.s.UserLoginServiceImpl             : petar.petrovic : logged in.
+2023-12-24 11:10:57.033  INFO 65978 --- [http-nio-8080-exec-1] c.i.b.c.UserLoginController              : petar.petrovic : logged in.
+2023-12-24 11:11:00.399  INFO 65978 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:11:00.401  INFO 65978 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-24 11:11:00.401  INFO 65978 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-24 11:14:05.792  INFO 66091 --- [restartedMain] c.i.b.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 66091 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-24 11:14:05.796  INFO 66091 --- [restartedMain] c.i.b.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-24 11:14:05.814  INFO 66091 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 11:14:05.814  INFO 66091 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 11:14:06.138  INFO 66091 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 11:14:06.174  INFO 66091 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 10 JPA repository interfaces.
+2023-12-24 11:14:06.329  INFO 66091 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@601da6d7' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 11:14:06.332  INFO 66091 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 11:14:06.454  INFO 66091 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-24 11:14:06.459  INFO 66091 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-24 11:14:06.459  INFO 66091 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-24 11:14:06.485  INFO 66091 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-24 11:14:06.486  INFO 66091 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 671 ms
+2023-12-24 11:14:06.746  INFO 66091 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-24 11:14:06.865  INFO 66091 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-24 11:14:07.403  INFO 66091 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:14:07.428  WARN 66091 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 11:14:07.663  INFO 66091 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9fd492c6-a917-450f-94b3-faf4aedbe913
+
+2023-12-24 11:14:07.775  INFO 66091 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@772c1e2b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6c89d271, org.springframework.security.web.header.HeaderWriterFilter@244387df, org.springframework.web.filter.CorsFilter@5a322bba, org.springframework.security.web.authentication.logout.LogoutFilter@599a36bd, config.rs.nikolapacekvetnic.schoolapp_backend.JWTAuthorizationFilter@9d237c8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@784398c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@363641c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ef441ee, org.springframework.security.web.session.SessionManagementFilter@1a5a8d0d, org.springframework.security.web.access.ExceptionTranslationFilter@2a97d0f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c519edc]
+2023-12-24 11:14:07.869  INFO 66091 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-24 11:14:07.889  INFO 66091 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-24 11:14:07.896  INFO 66091 --- [restartedMain] c.i.b.BackendFinalApplication            : Started BackendFinalApplication in 2.292 seconds (JVM running for 2.675)
+2023-12-24 11:14:13.476  INFO 66091 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 11:14:13.476  INFO 66091 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-24 11:14:13.477  INFO 66091 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-12-24 11:14:13.633  INFO 66091 --- [http-nio-8080-exec-2] c.i.b.c.TeacherController                : Optional[petar.petrovic] : viewed own profile.
+2023-12-24 11:14:35.186  INFO 66091 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:14:35.189  INFO 66091 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-24 11:14:35.191  INFO 66091 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-24 11:19:04.985  INFO 67205 --- [restartedMain] r.n.s.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 67205 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-24 11:19:04.988  INFO 67205 --- [restartedMain] r.n.s.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-24 11:19:05.002  INFO 67205 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-24 11:19:05.002  INFO 67205 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-24 11:19:05.240  INFO 67205 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 11:19:05.269  INFO 67205 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 10 JPA repository interfaces.
+2023-12-24 11:19:05.397  INFO 67205 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5c2a3faf' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 11:19:05.399  INFO 67205 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 11:19:05.495  INFO 67205 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-24 11:19:05.499  INFO 67205 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-24 11:19:05.499  INFO 67205 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-24 11:19:05.527  INFO 67205 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-24 11:19:05.527  INFO 67205 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 525 ms
+2023-12-24 11:19:05.693  INFO 67205 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-24 11:19:05.809  INFO 67205 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-24 11:19:06.275  INFO 67205 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:19:06.295  WARN 67205 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 11:19:06.504  INFO 67205 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 34cbf080-e26a-433c-9861-40f90069377d
+
+2023-12-24 11:19:06.609  INFO 67205 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@240cdc27, org.springframework.security.web.context.SecurityContextPersistenceFilter@280fab32, org.springframework.security.web.header.HeaderWriterFilter@46a9800c, org.springframework.web.filter.CorsFilter@bd4eb54, org.springframework.security.web.authentication.logout.LogoutFilter@58fcb53e, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@39e22a4c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11828210, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73fe149, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@266cca4f, org.springframework.security.web.session.SessionManagementFilter@12443e4a, org.springframework.security.web.access.ExceptionTranslationFilter@732f03ee, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d199d7f]
+2023-12-24 11:19:06.682  INFO 67205 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-24 11:19:06.697  INFO 67205 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-24 11:19:06.703  INFO 67205 --- [restartedMain] r.n.s.BackendFinalApplication            : Started BackendFinalApplication in 1.882 seconds (JVM running for 2.17)
+2023-12-24 11:19:16.095  INFO 67205 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-24 11:19:16.095  INFO 67205 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-24 11:19:16.096  INFO 67205 --- [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-12-24 11:19:16.121  WARN 67205 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'password' for method parameter type String is not present]
+2023-12-24 11:19:25.445  INFO 67205 --- [http-nio-8080-exec-4] r.n.s.s.UserLoginServiceImpl             : 1 [TEACHER] petar.petrovic : JWTToken granted.
+2023-12-24 11:19:25.445  INFO 67205 --- [http-nio-8080-exec-4] r.n.s.s.UserLoginServiceImpl             : petar.petrovic : logged in.
+2023-12-24 11:19:25.445  INFO 67205 --- [http-nio-8080-exec-4] r.n.s.c.UserLoginController              : petar.petrovic : logged in.
+2023-12-24 11:19:34.794  INFO 67205 --- [http-nio-8080-exec-5] r.n.s.c.TeacherController                : Optional[petar.petrovic] : viewed own profile.
+2023-12-24 11:19:54.268  INFO 67205 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:19:54.273  INFO 67205 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-24 11:19:54.274  INFO 67205 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-24 11:19:54.367  INFO 67205 --- [restartedMain] r.n.s.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 67205 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-24 11:19:54.367  INFO 67205 --- [restartedMain] r.n.s.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-24 11:19:54.432  INFO 67205 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-24 11:19:54.442  INFO 67205 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 10 JPA repository interfaces.
+2023-12-24 11:19:54.473  INFO 67205 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@787e71b7' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 11:19:54.473  INFO 67205 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-24 11:19:54.497  INFO 67205 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-24 11:19:54.497  INFO 67205 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-24 11:19:54.498  INFO 67205 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-24 11:19:54.503  INFO 67205 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-24 11:19:54.503  INFO 67205 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 135 ms
+2023-12-24 11:19:54.528  INFO 67205 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-12-24 11:19:54.574  INFO 67205 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-12-24 11:19:54.740  INFO 67205 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:19:54.752  WARN 67205 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-24 11:19:54.845  INFO 67205 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 35856ea8-5f3e-4e39-806d-ce9cf6aea014
+
+2023-12-24 11:19:54.881  INFO 67205 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3452c236, org.springframework.security.web.context.SecurityContextPersistenceFilter@1fd19f4b, org.springframework.security.web.header.HeaderWriterFilter@15e66892, org.springframework.web.filter.CorsFilter@2c7829b6, org.springframework.security.web.authentication.logout.LogoutFilter@66009263, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@29972a20, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1bf5f4cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@297ec284, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4525d3ed, org.springframework.security.web.session.SessionManagementFilter@20b8af4a, org.springframework.security.web.access.ExceptionTranslationFilter@2b65f8a4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e0c4a5d]
+2023-12-24 11:19:54.917  INFO 67205 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-24 11:19:54.924  INFO 67205 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-24 11:19:54.926  INFO 67205 --- [restartedMain] r.n.s.BackendFinalApplication            : Started BackendFinalApplication in 0.595 seconds (JVM running for 50.392)
+2023-12-24 11:19:54.927  INFO 67205 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-24 11:19:55.199  INFO 67205 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-24 11:19:55.199  INFO 67205 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-12-24 11:19:55.200  INFO 67205 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-12-25 00:28:10.988  INFO 93578 --- [restartedMain] r.n.s.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 93578 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-25 00:28:10.991  INFO 93578 --- [restartedMain] r.n.s.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-25 00:28:11.006  INFO 93578 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-25 00:28:11.006  INFO 93578 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-25 00:28:11.273  INFO 93578 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-25 00:28:11.307  INFO 93578 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 10 JPA repository interfaces.
+2023-12-25 00:28:11.456  INFO 93578 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6e7d4afc' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 00:28:11.458  INFO 93578 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 00:28:11.571  INFO 93578 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-25 00:28:11.575  INFO 93578 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-25 00:28:11.575  INFO 93578 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-25 00:28:11.600  INFO 93578 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-25 00:28:11.600  INFO 93578 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 593 ms
+2023-12-25 00:28:11.777  INFO 93578 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-25 00:28:11.908  INFO 93578 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-25 00:28:12.413  INFO 93578 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 00:28:12.436  WARN 93578 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-25 00:28:12.656  INFO 93578 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4910dd44-c1ba-4c2c-8a58-94d273781920
+
+2023-12-25 00:28:12.763  INFO 93578 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c77c9d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4caee8a5, org.springframework.security.web.header.HeaderWriterFilter@335acc65, org.springframework.web.filter.CorsFilter@8265428, org.springframework.security.web.authentication.logout.LogoutFilter@1c7fe50, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@1cf9fc36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@767e565c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ad4e481, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45711d2e, org.springframework.security.web.session.SessionManagementFilter@6cf03238, org.springframework.security.web.access.ExceptionTranslationFilter@30107755, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8a94530]
+2023-12-25 00:28:12.845  INFO 93578 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-25 00:28:12.863  INFO 93578 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-25 00:28:12.869  INFO 93578 --- [restartedMain] r.n.s.BackendFinalApplication            : Started BackendFinalApplication in 2.049 seconds (JVM running for 2.511)
+2023-12-25 00:28:23.869  INFO 93578 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-25 00:28:23.870  INFO 93578 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-25 00:28:23.871  INFO 93578 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2023-12-25 00:28:23.899  WARN 93578 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'password' for method parameter type String is not present]
+2023-12-25 00:28:35.518  INFO 93578 --- [http-nio-8080-exec-3] r.n.s.s.UserLoginServiceImpl             : 0 [ADMIN] admin : JWTToken granted.
+2023-12-25 00:28:35.519  INFO 93578 --- [http-nio-8080-exec-3] r.n.s.s.UserLoginServiceImpl             : admin : logged in.
+2023-12-25 00:28:35.519  INFO 93578 --- [http-nio-8080-exec-3] r.n.s.c.UserLoginController              : admin : logged in.
+2023-12-25 00:29:31.557  INFO 93578 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 00:29:31.562  INFO 93578 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-25 00:29:31.564  INFO 93578 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-25 00:29:31.639  INFO 93578 --- [restartedMain] r.n.s.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 93578 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-25 00:29:31.640  INFO 93578 --- [restartedMain] r.n.s.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-25 00:29:31.714  INFO 93578 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-25 00:29:31.724  INFO 93578 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 10 JPA repository interfaces.
+2023-12-25 00:29:31.754  INFO 93578 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@e6f61a0' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 00:29:31.754  INFO 93578 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 00:29:31.777  INFO 93578 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-25 00:29:31.777  INFO 93578 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-25 00:29:31.777  INFO 93578 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-25 00:29:31.783  INFO 93578 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-25 00:29:31.783  INFO 93578 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 142 ms
+2023-12-25 00:29:31.806  INFO 93578 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-12-25 00:29:31.854  INFO 93578 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-12-25 00:29:32.026  INFO 93578 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 00:29:32.039  WARN 93578 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-25 00:29:32.134  INFO 93578 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ab1470ba-95f0-407e-aee6-827175d00206
+
+2023-12-25 00:29:32.176  INFO 93578 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4915bb3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cbae055, org.springframework.security.web.header.HeaderWriterFilter@53edfdca, org.springframework.web.filter.CorsFilter@6a356d2f, org.springframework.security.web.authentication.logout.LogoutFilter@3948b96b, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@6b5b00a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bdae64c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17e55d50, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c5ff3bf, org.springframework.security.web.session.SessionManagementFilter@572643ae, org.springframework.security.web.access.ExceptionTranslationFilter@1e45325c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@969d55f]
+2023-12-25 00:29:32.213  INFO 93578 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-25 00:29:32.220  INFO 93578 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-25 00:29:32.222  INFO 93578 --- [restartedMain] r.n.s.BackendFinalApplication            : Started BackendFinalApplication in 0.605 seconds (JVM running for 81.864)
+2023-12-25 00:29:32.223  INFO 93578 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-25 00:29:34.589  INFO 93578 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 00:29:34.589  INFO 93578 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-12-25 00:29:34.590  INFO 93578 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-12-25 09:36:25.913  INFO 10699 --- [restartedMain] r.n.s.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 10699 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-25 09:36:25.916  INFO 10699 --- [restartedMain] r.n.s.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-25 09:36:25.932  INFO 10699 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-25 09:36:25.932  INFO 10699 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-25 09:36:26.199  INFO 10699 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-25 09:36:26.231  INFO 10699 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 10 JPA repository interfaces.
+2023-12-25 09:36:26.360  INFO 10699 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2914c4bf' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 09:36:26.362  INFO 10699 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 09:36:26.474  INFO 10699 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-25 09:36:26.479  INFO 10699 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-25 09:36:26.479  INFO 10699 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-25 09:36:26.507  INFO 10699 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-25 09:36:26.507  INFO 10699 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 575 ms
+2023-12-25 09:36:26.703  INFO 10699 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-25 09:36:26.819  INFO 10699 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-25 09:36:27.334  INFO 10699 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 09:36:27.355  WARN 10699 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-25 09:36:27.579  INFO 10699 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6ea522d2-60eb-41ce-a45c-bb2ffbc1e22b
+
+2023-12-25 09:36:27.685  INFO 10699 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c22392c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b0e8e20, org.springframework.security.web.header.HeaderWriterFilter@3be27d8, org.springframework.web.filter.CorsFilter@7ac4501d, org.springframework.security.web.authentication.logout.LogoutFilter@7f38223, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@6056a08d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f964d82, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40eeb1a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16d03566, org.springframework.security.web.session.SessionManagementFilter@74504ebb, org.springframework.security.web.access.ExceptionTranslationFilter@87aa55a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ebccc12]
+2023-12-25 09:36:27.772  INFO 10699 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-25 09:36:27.789  INFO 10699 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-25 09:36:27.795  INFO 10699 --- [restartedMain] r.n.s.BackendFinalApplication            : Started BackendFinalApplication in 2.052 seconds (JVM running for 2.352)
+2023-12-25 09:37:03.556  INFO 10699 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-25 09:37:03.557  INFO 10699 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-25 09:37:03.560  INFO 10699 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2023-12-25 09:37:03.816  INFO 10699 --- [http-nio-8080-exec-1] r.n.s.s.UserLoginServiceImpl             : 0 [ADMIN] admin : JWTToken granted.
+2023-12-25 09:37:03.816  INFO 10699 --- [http-nio-8080-exec-1] r.n.s.s.UserLoginServiceImpl             : admin : logged in.
+2023-12-25 09:37:03.816  INFO 10699 --- [http-nio-8080-exec-1] r.n.s.c.UserLoginController              : admin : logged in.
+2023-12-25 09:38:46.328  INFO 10699 --- [http-nio-8080-exec-6] r.n.s.s.UserLoginServiceImpl             : 1 [TEACHER] petar.petrovic : JWTToken granted.
+2023-12-25 09:38:46.328  INFO 10699 --- [http-nio-8080-exec-6] r.n.s.s.UserLoginServiceImpl             : petar.petrovic : logged in.
+2023-12-25 09:38:46.328  INFO 10699 --- [http-nio-8080-exec-6] r.n.s.c.UserLoginController              : petar.petrovic : logged in.
+2023-12-25 09:39:43.339  INFO 10699 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 09:39:43.342  INFO 10699 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-25 09:39:43.344  INFO 10699 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-25 09:39:43.627  INFO 10699 --- [restartedMain] r.n.s.BackendFinalApplication            : Starting BackendFinalApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 10699 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-25 09:39:43.627  INFO 10699 --- [restartedMain] r.n.s.BackendFinalApplication            : No active profile set, falling back to default profiles: default
+2023-12-25 09:39:43.718  INFO 10699 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-25 09:39:43.728  INFO 10699 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 10 JPA repository interfaces.
+2023-12-25 09:39:43.758  INFO 10699 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@63ad7a06' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 09:39:43.759  INFO 10699 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 09:39:43.785  INFO 10699 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-25 09:39:43.786  INFO 10699 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-25 09:39:43.786  INFO 10699 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-25 09:39:43.791  INFO 10699 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-25 09:39:43.791  INFO 10699 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 162 ms
+2023-12-25 09:39:43.817  INFO 10699 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-12-25 09:39:43.859  INFO 10699 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-12-25 09:39:44.025  INFO 10699 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 09:39:44.033  WARN 10699 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-25 09:39:44.131  INFO 10699 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 749b0a23-f2f2-4cf1-a32b-53588ba9fdbc
+
+2023-12-25 09:39:44.167  INFO 10699 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e2872c8, org.springframework.security.web.context.SecurityContextPersistenceFilter@9b02e1d, org.springframework.security.web.header.HeaderWriterFilter@3c6139e0, org.springframework.web.filter.CorsFilter@70ca1f3d, org.springframework.security.web.authentication.logout.LogoutFilter@76a7ee11, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@25505671, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21d9d4c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@37861ad6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fbd2c73, org.springframework.security.web.session.SessionManagementFilter@15fb8b7a, org.springframework.security.web.access.ExceptionTranslationFilter@23451c63, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@111d7151]
+2023-12-25 09:39:44.198  INFO 10699 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-25 09:39:44.204  INFO 10699 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-25 09:39:44.206  INFO 10699 --- [restartedMain] r.n.s.BackendFinalApplication            : Started BackendFinalApplication in 0.809 seconds (JVM running for 198.76)
+2023-12-25 09:39:44.207  INFO 10699 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-25 09:40:17.091  INFO 10699 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 09:40:17.093  INFO 10699 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2023-12-25 09:40:17.094  INFO 10699 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2023-12-25 09:40:49.378  INFO 10874 --- [restartedMain] r.n.s.SchoolBackendApplication           : Starting SchoolBackendApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 10874 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-25 09:40:49.382  INFO 10874 --- [restartedMain] r.n.s.SchoolBackendApplication           : No active profile set, falling back to default profiles: default
+2023-12-25 09:40:49.399  INFO 10874 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-25 09:40:49.399  INFO 10874 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-25 09:40:49.708  INFO 10874 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-25 09:40:49.738  INFO 10874 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 10 JPA repository interfaces.
+2023-12-25 09:40:49.874  INFO 10874 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6154ebc3' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 09:40:49.876  INFO 10874 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 09:40:49.983  INFO 10874 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-25 09:40:49.988  INFO 10874 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-25 09:40:49.988  INFO 10874 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-25 09:40:50.014  INFO 10874 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-25 09:40:50.014  INFO 10874 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 614 ms
+2023-12-25 09:40:50.201  INFO 10874 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-25 09:40:50.336  INFO 10874 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-25 09:40:50.877  INFO 10874 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 09:40:50.895  WARN 10874 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-25 09:40:51.125  INFO 10874 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6a5d0f1e-6862-413c-9b1b-0a2ae12ee287
+
+2023-12-25 09:40:51.239  INFO 10874 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b0c3984, org.springframework.security.web.context.SecurityContextPersistenceFilter@70f9927d, org.springframework.security.web.header.HeaderWriterFilter@78d2d0c2, org.springframework.web.filter.CorsFilter@bd9874c, org.springframework.security.web.authentication.logout.LogoutFilter@13689c64, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@3aef0f23, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ee4e531, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a58e87a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e2c2d85, org.springframework.security.web.session.SessionManagementFilter@6d028b68, org.springframework.security.web.access.ExceptionTranslationFilter@2946b96b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6748fb08]
+2023-12-25 09:40:51.318  INFO 10874 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-25 09:40:51.334  INFO 10874 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-25 09:40:51.340  INFO 10874 --- [restartedMain] r.n.s.SchoolBackendApplication           : Started SchoolBackendApplication in 2.146 seconds (JVM running for 2.492)
+2023-12-25 09:40:53.790  INFO 10874 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 09:40:53.792  INFO 10874 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-25 09:40:53.793  INFO 10874 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-25 14:16:40.886  INFO 20986 --- [main] r.n.s.s.ParentServiceImplTest            : Starting ParentServiceImplTest using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 20986 (started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-25 14:16:40.890  INFO 20986 --- [main] r.n.s.s.ParentServiceImplTest            : No active profile set, falling back to default profiles: default
+2023-12-25 14:16:41.216  INFO 20986 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-25 14:16:41.256  INFO 20986 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 10 JPA repository interfaces.
+2023-12-25 14:16:41.429  INFO 20986 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3728a578' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 14:16:41.433  INFO 20986 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-25 14:16:41.661  INFO 20986 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-25 14:16:41.834  INFO 20986 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-25 14:16:42.399  INFO 20986 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 14:16:42.420  WARN 20986 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-25 14:16:42.704  INFO 20986 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0d8c040e-8b12-4b44-b72d-037c3179359a
+
+2023-12-25 14:16:42.894  INFO 20986 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2da8ed80, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cb32140, org.springframework.security.web.header.HeaderWriterFilter@5aefdb9e, org.springframework.web.filter.CorsFilter@d827673, org.springframework.security.web.authentication.logout.LogoutFilter@34d26a68, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@d695f9d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31daf094, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ed88e31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7daf167, org.springframework.security.web.session.SessionManagementFilter@66df362c, org.springframework.security.web.access.ExceptionTranslationFilter@727de450, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1188e08b]
+2023-12-25 14:16:43.074  INFO 20986 --- [main] r.n.s.s.ParentServiceImplTest            : Started ParentServiceImplTest in 2.33 seconds (JVM running for 2.85)
+2023-12-25 14:16:43.183  INFO 20986 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-25 14:16:43.185  INFO 20986 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-25 14:16:43.187  INFO 20986 --- [SpringApplicationShutdownHook] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-27 08:37:35.839  INFO 25721 --- [main] r.n.s.c.ParentControllerTest             : Starting ParentControllerTest using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 25721 (started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-27 08:37:35.844  INFO 25721 --- [main] r.n.s.c.ParentControllerTest             : No active profile set, falling back to default profiles: default
+2023-12-27 08:37:36.362  INFO 25721 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@b2c4a8b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 08:37:36.367  INFO 25721 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 08:37:36.450  INFO 25721 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a0072e80-3447-4111-8a4e-b28c7cd171a5
+
+2023-12-27 08:37:36.612  INFO 25721 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69ba3f4e, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c33fcf8, org.springframework.security.web.header.HeaderWriterFilter@478967eb, org.springframework.web.filter.CorsFilter@579846cc, org.springframework.security.web.authentication.logout.LogoutFilter@9263c54, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@a826ff8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53feeac9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@388be5fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71f0806b, org.springframework.security.web.session.SessionManagementFilter@10e9a5fe, org.springframework.security.web.access.ExceptionTranslationFilter@720f56e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5fb07347]
+2023-12-27 08:37:36.709  INFO 25721 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-27 08:37:36.709  INFO 25721 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 08:37:36.709  INFO 25721 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 08:37:36.724  INFO 25721 --- [main] r.n.s.c.ParentControllerTest             : Started ParentControllerTest in 1.057 seconds (JVM running for 1.734)
+2023-12-27 08:43:26.584  INFO 25902 --- [main] r.n.s.c.ParentControllerTest             : Starting ParentControllerTest using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 25902 (started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-27 08:43:26.588  INFO 25902 --- [main] r.n.s.c.ParentControllerTest             : No active profile set, falling back to default profiles: default
+2023-12-27 08:43:27.049  INFO 25902 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@101cf747' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 08:43:27.053  INFO 25902 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 08:43:27.136  INFO 25902 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: b51b09bb-b713-449c-8639-ffd37d3d5778
+
+2023-12-27 08:43:27.275  INFO 25902 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63187d63, org.springframework.security.web.context.SecurityContextPersistenceFilter@53feeac9, org.springframework.security.web.header.HeaderWriterFilter@7a358613, org.springframework.web.filter.CorsFilter@1ccdc7aa, org.springframework.security.web.authentication.logout.LogoutFilter@693f2213, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@1a536164, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d99ee1b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@8f2e3e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1657b017, org.springframework.security.web.session.SessionManagementFilter@61a87366, org.springframework.security.web.access.ExceptionTranslationFilter@2c60ce47, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21090c88]
+2023-12-27 08:43:27.359  INFO 25902 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-12-27 08:43:27.359  INFO 25902 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 08:43:27.360  INFO 25902 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-27 08:43:27.377  INFO 25902 --- [main] r.n.s.c.ParentControllerTest             : Started ParentControllerTest in 0.947 seconds (JVM running for 1.621)
+2023-12-27 11:07:55.420  INFO 31152 --- [main] r.n.s.c.LectureControllerTest            : Starting LectureControllerTest using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 31152 (started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-27 11:07:55.425  INFO 31152 --- [main] r.n.s.c.LectureControllerTest            : No active profile set, falling back to default profiles: default
+2023-12-27 11:07:55.909  INFO 31152 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5b29ab61' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 11:07:55.914  INFO 31152 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 11:07:55.976  WARN 31152 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lectureController' defined in file [/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes/rs/nikolapacekvetnic/schoolapp_backend/controllers/LectureController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-27 11:07:55.980  INFO 31152 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 11:07:55.990 ERROR 31152 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in rs.nikolapacekvetnic.schoolapp_backend.controllers.LectureController required a bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' in your configuration.
+
+2023-12-27 11:07:55.990 ERROR 31152 --- [main] o.s.t.c.TestContextManager               : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5b48f0f4] to prepare test instance [rs.nikolapacekvetnic.schoolapp_backend.controllers.LectureControllerTest@546ed2a0]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:110) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:94) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:61) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lectureController' defined in file [/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes/rs/nikolapacekvetnic/schoolapp_backend/controllers/LectureController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	... 70 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	... 70 more
+
+2023-12-27 11:20:18.377  INFO 31445 --- [main] r.n.s.c.LectureControllerTest            : Starting LectureControllerTest using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 31445 (started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-27 11:20:18.381  INFO 31445 --- [main] r.n.s.c.LectureControllerTest            : No active profile set, falling back to default profiles: default
+2023-12-27 11:20:18.625  INFO 31445 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@50caeb4b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 11:20:18.629  INFO 31445 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 11:20:18.678  WARN 31445 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lectureController' defined in file [/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes/rs/nikolapacekvetnic/schoolapp_backend/controllers/LectureController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-27 11:20:18.680  INFO 31445 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 11:20:18.689 ERROR 31445 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in rs.nikolapacekvetnic.schoolapp_backend.controllers.LectureController required a bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' in your configuration.
+
+2023-12-27 11:20:18.689 ERROR 31445 --- [main] o.s.t.c.TestContextManager               : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4cbb11e4] to prepare test instance [rs.nikolapacekvetnic.schoolapp_backend.controllers.LectureControllerTest@326dbe25]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:110) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:94) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:61) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lectureController' defined in file [/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes/rs/nikolapacekvetnic/schoolapp_backend/controllers/LectureController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	... 70 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	... 70 more
+
+2023-12-27 11:20:18.731  INFO 31445 --- [main] r.n.s.s.SchoolClassServiceImpl           : Added student testStudent to class 10-1
+2023-12-27 11:20:18.735  INFO 31445 --- [main] r.n.s.s.SchoolClassServiceImpl           : Registered class 1-1
+2023-12-27 11:20:18.744  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.744  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.744  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.750  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.750  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.750  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.756  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.756  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.757  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.765  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.765  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.766  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.777  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.778  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.778  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.786  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.786  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.786  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.794  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.794  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.795  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-27 11:20:18.810  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.810  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.811  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 1 ms
+2023-12-27 11:20:18.816  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.816  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.816  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.821  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.821  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.821  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.825  INFO 31445 --- [main] r.n.s.s.UserRegistrationServiceImpl      : null [ADMIN] username : created.
+2023-12-27 11:20:18.838  INFO 31445 --- [main] r.n.s.s.GradeServiceImpl                 : Lecture #1 : parent not found.
+2023-12-27 11:20:18.838  INFO 31445 --- [main] r.n.s.s.GradeServiceImpl                 : Lecture #1 : student 1 graded 4
+2023-12-27 11:20:18.843  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.843  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.843  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.845  INFO 31445 --- [main] r.n.s.c.UserLoginController              : user : logged in.
+2023-12-27 11:20:18.849  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.849  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.849  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.858  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.858  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.858  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:18.863  INFO 31445 --- [main] o.s.m.w.MockServletContext               : Initializing Spring TestDispatcherServlet ''
+2023-12-27 11:20:18.863  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Initializing Servlet ''
+2023-12-27 11:20:18.863  INFO 31445 --- [main] o.s.t.w.s.TestDispatcherServlet          : Completed initialization in 0 ms
+2023-12-27 11:20:28.654  INFO 31449 --- [main] r.n.s.c.LectureControllerTest            : Starting LectureControllerTest using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 31449 (started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-27 11:20:28.659  INFO 31449 --- [main] r.n.s.c.LectureControllerTest            : No active profile set, falling back to default profiles: default
+2023-12-27 11:20:29.151  INFO 31449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@43a4a9e5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 11:20:29.156  INFO 31449 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 11:20:29.205  WARN 31449 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lectureController' defined in file [/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes/rs/nikolapacekvetnic/schoolapp_backend/controllers/LectureController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-12-27 11:20:29.212  INFO 31449 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-12-27 11:20:29.222 ERROR 31449 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in rs.nikolapacekvetnic.schoolapp_backend.controllers.LectureController required a bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' in your configuration.
+
+2023-12-27 11:20:29.222 ERROR 31449 --- [main] o.s.t.c.TestContextManager               : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d87d449] to prepare test instance [rs.nikolapacekvetnic.schoolapp_backend.controllers.LectureControllerTest@4137aab0]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:110) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:94) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:61) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735) ~[?:?]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734) ~[?:?]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.Optional.orElseGet(Optional.java:364) ~[?:?]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54) ~[junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:96) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:75) [junit-platform-launcher-1.7.2.jar:1.7.2]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57) [junit5-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) [idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) [junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lectureController' defined in file [/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes/rs/nikolapacekvetnic/schoolapp_backend/controllers/LectureController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	... 70 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'rs.nikolapacekvetnic.schoolapp_backend.repositories.GradeRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.2.jar:2.5.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.2.jar:2.5.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	... 70 more
+
+2023-12-27 14:13:22.527  INFO 35570 --- [restartedMain] r.n.s.SchoolBackendApplication           : Starting SchoolBackendApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 35570 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-27 14:13:22.536  INFO 35570 --- [restartedMain] r.n.s.SchoolBackendApplication           : No active profile set, falling back to default profiles: default
+2023-12-27 14:13:22.558  INFO 35570 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-27 14:13:22.559  INFO 35570 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-27 14:13:22.832  INFO 35570 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 14:13:22.864  INFO 35570 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 10 JPA repository interfaces.
+2023-12-27 14:13:22.984  INFO 35570 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6618e88c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 14:13:22.986  INFO 35570 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 14:13:23.105  INFO 35570 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-27 14:13:23.110  INFO 35570 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-27 14:13:23.110  INFO 35570 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-27 14:13:23.139  INFO 35570 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-27 14:13:23.139  INFO 35570 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 580 ms
+2023-12-27 14:13:23.336  INFO 35570 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2023-12-27 14:13:23.469  INFO 35570 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2023-12-27 14:13:23.955  INFO 35570 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-27 14:13:23.976  WARN 35570 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-27 14:13:24.209  INFO 35570 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3837e494-3bf5-4aad-a9d1-828d15f4d694
+
+2023-12-27 14:13:24.326  INFO 35570 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36caefb8, org.springframework.security.web.context.SecurityContextPersistenceFilter@708d074d, org.springframework.security.web.header.HeaderWriterFilter@133ba18b, org.springframework.web.filter.CorsFilter@65bdf0cd, org.springframework.security.web.authentication.logout.LogoutFilter@50c43f08, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@2d311f31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d3cbe23, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5307214d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ad8834b, org.springframework.security.web.session.SessionManagementFilter@7edf1720, org.springframework.security.web.access.ExceptionTranslationFilter@a9499a5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@572afb2f]
+2023-12-27 14:13:24.408  INFO 35570 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-27 14:13:24.426  INFO 35570 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-27 14:13:24.432  INFO 35570 --- [restartedMain] r.n.s.SchoolBackendApplication           : Started SchoolBackendApplication in 2.077 seconds (JVM running for 2.42)
+2023-12-27 14:13:45.785  INFO 35570 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-27 14:13:45.786  INFO 35570 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2023-12-27 14:13:45.789  INFO 35570 --- [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2023-12-27 14:13:45.828  WARN 35570 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'password' for method parameter type String is not present]
+2023-12-27 14:13:53.465  INFO 35570 --- [http-nio-8080-exec-3] r.n.s.s.UserLoginServiceImpl             : 0 [ADMIN] admin : JWTToken granted.
+2023-12-27 14:13:53.466  INFO 35570 --- [http-nio-8080-exec-3] r.n.s.s.UserLoginServiceImpl             : admin : logged in.
+2023-12-27 14:13:53.466  INFO 35570 --- [http-nio-8080-exec-3] r.n.s.c.UserLoginController              : admin : logged in.
+2023-12-27 14:14:20.207  INFO 35570 --- [http-nio-8080-exec-5] r.n.s.s.AdminServiceImpl                 : Optional[admin] : viewed logs.
+2023-12-27 14:14:35.321  INFO 35570 --- [http-nio-8080-exec-6] r.n.s.s.AdminServiceImpl                 : Optional[admin] : viewed all users.
+2023-12-27 14:53:44.317  INFO 35570 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-27 14:53:44.324  INFO 35570 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2023-12-27 14:53:44.335  INFO 35570 --- [Thread-5] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2023-12-27 14:53:44.458  INFO 35570 --- [restartedMain] r.n.s.SchoolBackendApplication           : Starting SchoolBackendApplication using Java 17.0.6 on Nikolas-MacBook-Pro-M1.local with PID 35570 (/Users/nikolavetnic/IdeaProjects/SchoolApp_Backend/target/classes started by nikolavetnic in /Users/nikolavetnic/IdeaProjects/SchoolApp_Backend)
+2023-12-27 14:53:44.458  INFO 35570 --- [restartedMain] r.n.s.SchoolBackendApplication           : No active profile set, falling back to default profiles: default
+2023-12-27 14:53:44.585  INFO 35570 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-27 14:53:44.601  INFO 35570 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 10 JPA repository interfaces.
+2023-12-27 14:53:44.692  INFO 35570 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@69decb33' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 14:53:44.692  INFO 35570 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-12-27 14:53:44.748  INFO 35570 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023-12-27 14:53:44.749  INFO 35570 --- [restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2023-12-27 14:53:44.750  INFO 35570 --- [restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2023-12-27 14:53:44.757  INFO 35570 --- [restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2023-12-27 14:53:44.757  INFO 35570 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 298 ms
+2023-12-27 14:53:44.809  INFO 35570 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2023-12-27 14:53:44.877  INFO 35570 --- [restartedMain] c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2023-12-27 14:53:45.115  INFO 35570 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-27 14:53:45.127  WARN 35570 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-27 14:53:45.245  INFO 35570 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d6b6d5e1-569f-4266-9e38-c8f3d0a53a18
+
+2023-12-27 14:53:45.292  INFO 35570 --- [restartedMain] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fee1746, org.springframework.security.web.context.SecurityContextPersistenceFilter@3ff4665, org.springframework.security.web.header.HeaderWriterFilter@6c13951e, org.springframework.web.filter.CorsFilter@52e50dc2, org.springframework.security.web.authentication.logout.LogoutFilter@55f87120, rs.nikolapacekvetnic.schoolapp_backend.config.JWTAuthorizationFilter@101c430a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a37deb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70e8a384, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f07b990, org.springframework.security.web.session.SessionManagementFilter@339e9577, org.springframework.security.web.access.ExceptionTranslationFilter@5d3bcc95, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43f184b5]
+2023-12-27 14:53:45.343  INFO 35570 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-27 14:53:45.350  INFO 35570 --- [restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-12-27 14:53:45.352  INFO 35570 --- [restartedMain] r.n.s.SchoolBackendApplication           : Started SchoolBackendApplication in 0.939 seconds (JVM running for 2423.335)
+2023-12-27 14:53:45.353  INFO 35570 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
